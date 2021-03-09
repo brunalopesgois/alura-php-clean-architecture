@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Alura\Arquitetura\Email;
+use Alura\Architecture\Domain\Email;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

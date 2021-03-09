@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit0abbc914779450eed342a5b6ea9e38f3
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -20,6 +20,10 @@ class ComposerStaticInit0abbc914779450eed342a5b6ea9e38f3
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -37,7 +41,7 @@ class ComposerStaticInit0abbc914779450eed342a5b6ea9e38f3
         ),
         'A' => 
         array (
-            'Alura\\Arquitetura\\' => 18,
+            'Alura\\Architecture\\' => 19,
         ),
     );
 
@@ -45,12 +49,16 @@ class ComposerStaticInit0abbc914779450eed342a5b6ea9e38f3
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
@@ -72,7 +80,7 @@ class ComposerStaticInit0abbc914779450eed342a5b6ea9e38f3
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Alura\\Arquitetura\\' => 
+        'Alura\\Architecture\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

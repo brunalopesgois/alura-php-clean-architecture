@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Alura\Arquitetura\Cpf;
+use Alura\Architecture\Domain\Cpf;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
