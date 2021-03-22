@@ -8,6 +8,7 @@ class Student
     private string $name;
     private Email $email;
     private array $phones;
+    private string $password;
 
     public static function withCpfNameAndEmail(string $cpf, string $name, string $email): self
     {
