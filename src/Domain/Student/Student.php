@@ -2,6 +2,9 @@
 
 namespace Alura\Architecture\Domain\Student;
 
+use Alura\Architecture\Domain\Cpf;
+use Alura\Architecture\Domain\Email;
+
 class Student
 {
     private Cpf $cpf;
