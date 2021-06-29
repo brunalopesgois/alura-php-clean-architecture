@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Tests\Domain;
 
 use Alura\Architecture\Domain\Email;
 use InvalidArgumentException;

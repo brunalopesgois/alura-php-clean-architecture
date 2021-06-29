@@ -2,6 +2,7 @@
 
 use Alura\Architecture\Domain\Student\Student;
 use Alura\Architecture\Infra\Student\StudentMemoryRepository;
+use Alura\Architecture\Infra\Student\StudentPdoRepository;
 
 require 'vendor/autoload.php';
 
@@ -13,4 +14,8 @@ $number = $argv[5];
 
 $student = Student::withCpfNameAndEmail($cpf, $name, $email)->addPhoneNumber($ddd, $number);
 $repository = new StudentMemoryRepository();
+$con = 'sqlite:host=localhost;dbname=banco';
+//$repository = new StudentPdoRepository(PDO, $con);
 $repository->add($student);
+
+print_r($repository->findAll());

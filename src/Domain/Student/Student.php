@@ -18,6 +18,14 @@ class Student
         return new Student(new Cpf($cpf), $name, new Email($email));
     }
 
+    public function __construct(Cpf $cpf, string $name, Email $email)
+    {
+        $this->cpf = $cpf;
+        $this->name = $name;
+        $this->email = $email;
+        $this->phones = [];
+    }
+
     public function addPhoneNumber(string $ddd, string $number): self
     {
         $this->phones[] = new Phone($ddd, $number);
