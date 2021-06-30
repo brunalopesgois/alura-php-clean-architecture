@@ -28,6 +28,10 @@ class Student
 
     public function addPhoneNumber(string $ddd, string $number): self
     {
+        if (count($this->phones) == 2) {
+            throw new ReachedPhonesQuantityLimitException();
+        }
+        
         $this->phones[] = new Phone($ddd, $number);
         return $this;
     }
