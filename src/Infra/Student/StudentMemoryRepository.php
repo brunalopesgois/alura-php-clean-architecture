@@ -19,7 +19,10 @@ class StudentMemoryRepository implements StudentRepository
 
     public function findByCpf(Cpf $cpf): Student
     {
-        $filteredStudents = array_filter($this->students, fn (Student $student) => $student->cpf() === $cpf);
+        $filteredStudents = array_filter(
+            $this->students,
+            fn (Student $student) => $student->cpf() == $cpf
+        );
 
         if (count($filteredStudents) === 0) {
             throw new StudentNotFound($cpf);

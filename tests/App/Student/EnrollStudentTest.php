@@ -2,8 +2,8 @@
 
 namespace Tests\App\Student;
 
-use Alura\Architecture\App\Student\EnrollStudent;
-use Alura\Architecture\App\Student\EnrollStudentDto;
+use Alura\Architecture\App\Student\EnrollStudent\EnrollStudent;
+use Alura\Architecture\App\Student\EnrollStudent\EnrollStudentDto;
 use Alura\Architecture\Domain\Cpf;
 use Alura\Architecture\Infra\Student\StudentMemoryRepository;
 use PHPUnit\Framework\TestCase;
@@ -19,7 +19,7 @@ class EnrollStudentTest extends TestCase
         );
         $studentRepository = new StudentMemoryRepository();
         $useCase = new EnrollStudent($studentRepository);
-
+        
         $useCase->execute($studentData);
 
         $student  = $studentRepository->findByCpf(new Cpf('123.456.789-10'));
