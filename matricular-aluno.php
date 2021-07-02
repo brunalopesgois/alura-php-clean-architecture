@@ -1,12 +1,12 @@
 <?php
 
-use Alura\Architecture\App\Student\EnrollStudent\EnrollStudent;
-use Alura\Architecture\App\Student\EnrollStudent\EnrollStudentDto;
-use Alura\Architecture\Domain\EventPublisher;
-use Alura\Architecture\Domain\Student\Student;
-use Alura\Architecture\Domain\Student\EnrolledStudentLog;
-use Alura\Architecture\Infra\Student\StudentMemoryRepository;
-use Alura\Architecture\Infra\Student\StudentPdoRepository;
+use Alura\Architecture\Academic\App\Student\EnrollStudent\EnrollStudent;
+use Alura\Architecture\Academic\App\Student\EnrollStudent\EnrollStudentDto;
+use Alura\Architecture\Academic\Domain\EventPublisher;
+use Alura\Architecture\Academic\Domain\Student\Student;
+use Alura\Architecture\Academic\Domain\Student\EnrolledStudentLog;
+use Alura\Architecture\Academic\Infra\Student\StudentMemoryRepository;
+use Alura\Architecture\Academic\Infra\Student\StudentPdoRepository;
 
 require 'vendor/autoload.php';
 
