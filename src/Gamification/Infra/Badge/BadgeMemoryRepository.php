@@ -15,8 +15,8 @@ class BadgeMemoryRepository implements BadgeRepository
         $this->badges[] = $badge;
     }
 
-    public function studentBadgesWithCpf(Cpf $cpf)
+    public function studentBadgesWithCpf(Cpf $cpf): array
     {
-        //
+        return array_filter($this->badges, fn (Badge $badge) => $badge->studentCpf() == $cpf);
     }
 }

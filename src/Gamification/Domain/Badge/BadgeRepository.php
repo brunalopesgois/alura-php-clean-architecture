@@ -8,5 +8,5 @@ interface BadgeRepository
 {
     public function add(Badge $badge): void;
 
-    public function studentBadgesWithCpf(Cpf $cpf);
+    public function studentBadgesWithCpf(Cpf $cpf): array;
 }
