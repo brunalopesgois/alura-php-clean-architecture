@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Academic\Domain;
+namespace Tests\Shared\Domain;
 
-use Alura\Architecture\Academic\Domain\Cpf;
+use Alura\Architecture\Shared\Domain\Cpf;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 

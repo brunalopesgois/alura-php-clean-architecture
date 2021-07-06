@@ -2,8 +2,6 @@
 
 namespace Tests\Academic\Domain\Student;
 
-use Alura\Architecture\Academic\Domain\Cpf;
-use Alura\Architecture\Academic\Domain\Email;
 use Alura\Architecture\Academic\Domain\Student\ReachedPhonesQuantityLimitException;
 use Alura\Architecture\Academic\Domain\Student\Student;
 use PHPUnit\Framework\TestCase;

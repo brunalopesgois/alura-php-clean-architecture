@@ -4,9 +4,9 @@ namespace Tests\Academic\App\Student;
 
 use Alura\Architecture\Academic\App\Student\EnrollStudent\EnrollStudent;
 use Alura\Architecture\Academic\App\Student\EnrollStudent\EnrollStudentDto;
-use Alura\Architecture\Academic\Domain\Cpf;
-use Alura\Architecture\Academic\Domain\EventPublisher;
 use Alura\Architecture\Academic\Infra\Student\StudentMemoryRepository;
+use Alura\Architecture\Shared\Domain\Cpf;
+use Alura\Architecture\Shared\Domain\Event\EventPublisher;
 use PHPUnit\Framework\TestCase;
 
 class EnrollStudentTest extends TestCase

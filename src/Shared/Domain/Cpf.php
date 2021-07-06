@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Academic\Domain;
+namespace Alura\Architecture\Shared\Domain;
 
 use InvalidArgumentException;
 

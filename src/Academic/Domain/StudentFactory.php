@@ -2,6 +2,8 @@
 
 namespace Alura\Architecture\Academic\Domain;
 
+use Alura\Architecture\Shared\Domain\Cpf;
+
 class StudentFactory
 {
     private Student $student;

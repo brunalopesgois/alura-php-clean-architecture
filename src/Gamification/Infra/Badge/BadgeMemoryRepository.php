@@ -1,10 +1,10 @@
 <?php
 
-namespace Alura\Architecture\Gamification\Badge\Infra;
+namespace Alura\Architecture\Gamification\Infra\Badge;
 
-use Alura\Architecture\Academic\Domain\Cpf;
 use Alura\Architecture\Gamification\Domain\Badge\Badge;
 use Alura\Architecture\Gamification\Domain\Badge\BadgeRepository;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 class BadgeMemoryRepository implements BadgeRepository
 {

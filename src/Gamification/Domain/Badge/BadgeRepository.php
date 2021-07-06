@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Gamification\Domain\Badge;
 
-use Alura\Architecture\Academic\Domain\Cpf;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 interface BadgeRepository
 {

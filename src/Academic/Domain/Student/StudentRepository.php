@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Academic\Domain\Student;
 
-use Alura\Architecture\Academic\Domain\Cpf;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 interface StudentRepository
 {

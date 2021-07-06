@@ -2,11 +2,11 @@
 
 namespace Alura\Architecture\Academic\App\Student\EnrollStudent;
 
-use Alura\Architecture\Academic\Domain\EventPublisher;
 use Alura\Architecture\Academic\Domain\Student\EnrolledStudentEvent;
 use Alura\Architecture\Academic\Domain\Student\Student;
 use Alura\Architecture\Academic\Domain\Student\StudentRepository;
 use Alura\Architecture\Academic\Infra\Student\EnrolledStudentLog;
+use Alura\Architecture\Shared\Domain\Event\EventPublisher;
 
 class EnrollStudent
 {

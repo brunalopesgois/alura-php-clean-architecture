@@ -2,8 +2,8 @@
 
 namespace Alura\Architecture\Academic\Domain\Student;
 
-use Alura\Architecture\Academic\Domain\Cpf;
 use Alura\Architecture\Academic\Domain\Email;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 class Student
 {

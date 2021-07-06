@@ -2,10 +2,10 @@
 
 namespace Alura\Architecture\Academic\Infra\Student;
 
-use Alura\Architecture\Academic\Domain\Cpf;
 use Alura\Architecture\Academic\Domain\Student\Student;
 use Alura\Architecture\Academic\Domain\Student\StudentNotFound;
 use Alura\Architecture\Academic\Domain\Student\StudentRepository;
+use Alura\Architecture\Shared\Domain\Cpf;
 use Exception;
 
 class StudentMemoryRepository implements StudentRepository
