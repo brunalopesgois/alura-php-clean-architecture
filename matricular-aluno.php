@@ -6,6 +6,8 @@ use Alura\Architecture\Academic\Domain\Student\Student;
 use Alura\Architecture\Academic\Domain\Student\EnrolledStudentLog;
 use Alura\Architecture\Academic\Infra\Student\StudentMemoryRepository;
 use Alura\Architecture\Academic\Infra\Student\StudentPdoRepository;
+use Alura\Architecture\Gamification\App\FindUserBadge\FindUserBadge;
+use Alura\Architecture\Gamification\App\FindUserBadge\FindUserBadgeDto;
 use Alura\Architecture\Gamification\App\GeneratesNewbieBadge;
 use Alura\Architecture\Gamification\Infra\Badge\BadgeMemoryRepository;
 use Alura\Architecture\Shared\Domain\Cpf;
@@ -35,6 +37,7 @@ $useCase = new EnrollStudent(new StudentMemoryRepository(), $publisher);
 
 $useCase->execute(new EnrollStudentDto($cpf, $name, $email));
 
-$badge = $badgeRepository->studentBadgesWithCpf(new Cpf('123.456.789-10'));
+$useCase = new FindUserBadge($badgeRepository);
+$response = $useCase->execute(new FindUserBadgeDto($cpf));
 
-print_r($badge);
+print_r($response);
